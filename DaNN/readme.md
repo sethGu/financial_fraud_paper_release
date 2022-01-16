@@ -1,27 +1,27 @@
-# DaNN (Domain Adaptive Neural Networks)
+# DaNN 域自适应神经网络(Domain Adaptive Neural Networks)
 
 - - -
 
-This is the implementation of **Domain Adaptive Neural Networks (DaNN)** using PyTorch. The original paper can be found at https://link.springer.com/chapter/10.1007/978-3-319-13560-1_76.
+使用PyTorch的 **Domain Adaptive Neural Networks (DaNN)** 复现。 原版论文在 https://link.springer.com/chapter/10.1007/978-3-319-13560-1_76.
 
-DaNN is rather a *simple* neural network (with only 1 hidden layer) for domain adaptation. But its idea is important that brings MMD (maximum mean discrpancy) for adaptation in neural network. From then on, many researches are following this idea to embed MMD or other measurements (e.g. CORAL loss, Wasserstein distance) into deeper (e.g. AlexNet, ResNet) networks.
+对于领域适应来说，DaNN是一个相当简单的神经网络(只有1个隐藏层)。 但它的思想对神经网络的最大平均偏差(MMD)适应具有重要意义。 从那时起，许多研究都遵循这一想法，将MMD或其他测量(如珊瑚流失、瓦瑟斯坦距离)嵌入更深的网络(如AlexNet、ResNet)。 
 
-I think if you are beginning to learn **deep transfer learning**, it is better to start with the most original and simple one. 
+对于 **深度迁移学习** 来讲，这是一个必须要学会以及实现的算法
 
-## Dataset
+## 数据
 
-The original paper adopted the popular *Office+Caltech10* dataset. You can download them [HERE](https://github.com/jindongwang/transferlearning/blob/master/data/dataset.md#download) and put them into a new folder named `data`.
+采用了 *Office+Caltech10* 数据。 可以从 [这下载](https://github.com/jindongwang/transferlearning/blob/master/data/dataset.md#download) 并将其放入新文件夹 `data`，或自行规定文件路径。
 
 - - -
 
-## Usage
+## 使用
 
-Make sure you have Python 3.6 and PyTorch 0.3.0. As for other requirements, I'm sure you are satisfied.
+采用 Python 3.6 和 PyTorch 0.3.0.
 
-- `DaNN.py` is the DaNN model
+<!-- - `DaNN.py` is the DaNN model
 - `mmd.py` is the MMD measurement. You're welcome to change it to others.
 - `data_loader.py` is the help function for loading data.
-- `main.py` is the main training and test program. You can directly run this file by `python main.py`.
+- `main.py` is the main training and test program. You can directly run this file by `python main.py`. -->
 
 - - -
 
